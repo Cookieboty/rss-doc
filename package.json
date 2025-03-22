@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npx wrangler deploy"
+    "deploy": "npx wrangler deploy --site",
+    "preview": "npx wrangler dev --site"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",

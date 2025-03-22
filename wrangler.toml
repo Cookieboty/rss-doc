@@ -1,25 +1,22 @@
-name = "figma-app"
+name = "rss-doc"
+main = "worker.js"
 compatibility_date = "2023-12-01"
 
+# 资源配置
 [site]
 bucket = ".next"
 
-[build]
-command = "npm run build"
+# 资源绑定
+[[d1_databases]]
+binding = "DB"
+database_name = "figma_app_db"
+database_id = ""
 
-[[routes]]
-pattern = "/"
-zone_name = "your-domain.com"
+# 绑定 Assets 命名空间
+[[kv_namespaces]]
+binding = "ASSETS"
+id = ""
 
+# 环境配置
 [env.production]
-name = "figma-app-prod"
-
-# 以下配置用于处理静态资源
-[[rules]]
-type = "ESModule"
-globs = ["**/*.js"]
-
-# 自定义缓存规则
-[rules.cache_settings]
-bucket_name = ".next"
-previews_bucket_name = ".next" 
+name = "figma-app-prod" 
