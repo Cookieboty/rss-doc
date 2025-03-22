@@ -1,0 +1,25 @@
+name = "figma-app"
+compatibility_date = "2023-12-01"
+
+[site]
+bucket = ".next"
+
+[build]
+command = "npm run build"
+
+[[routes]]
+pattern = "/"
+zone_name = "your-domain.com"
+
+[env.production]
+name = "figma-app-prod"
+
+# 以下配置用于处理静态资源
+[[rules]]
+type = "ESModule"
+globs = ["**/*.js"]
+
+# 自定义缓存规则
+[rules.cache_settings]
+bucket_name = ".next"
+previews_bucket_name = ".next" 
