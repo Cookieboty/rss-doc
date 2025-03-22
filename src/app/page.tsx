@@ -20,7 +20,7 @@ export default function Home() {
             <div className="absolute bottom-0 left-0 w-40 h-40 bg-blue-500/5 rounded-full blur-2xl -ml-20 -mb-20"></div>
 
             <div className="relative z-10">
-              <h1 className="text-2xl font-bold text-text-primary tracking-tight">探索您的信息世界</h1>
+              <h1 className="text-2xl font-bold text-text-primary tracking-tight">探索您的信息世界(Cookieboty)</h1>
               <p className="text-text-muted mt-2 max-w-lg text-base">
                 发现、收集和整理您感兴趣的内容，打造个性化的阅读体验
               </p>
